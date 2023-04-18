@@ -128,11 +128,19 @@ fieldset legend {
 
 
     color: #C1BCCC;
+    display: flex;
+    flex-direction: column;
 
 }
 
-.input-wrapper textarea {
+.input-wrapper-textarea textarea {
     padding: 0;
     height: 170px;
+    
+}
+
+.input-wrapper-textarea {
+    display: flex;
+    flex-direction: column;
 }
 
