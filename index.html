@@ -22,8 +22,7 @@
         </header>
 
 
-        <form>
-
+        <form id="my-form">
             
             <fieldset>
                 <div class="fieldset-wrapper">
@@ -31,7 +30,10 @@
 
                     <div class="input-wrapper">
                         <label for="event-title">Título do evento <span>(mínimo 8 caracteres)</span></label>
-                        <input type="text"  id="event-title" />
+                        <input 
+                        type="text"  
+                        id="event-title" 
+                        required />
                     </div>
     
                     <div class="input-wrapper">
@@ -65,7 +67,6 @@
  
             </fieldset>
 
-
             <fieldset>
                 <div class="fieldset-wrapper">
                     <legend>Privacidade</legend>
@@ -90,7 +91,6 @@
 
                 </div>
             </fieldset>   
-
 
             <fieldset>
                 <div class="fieldset-wrapper">
@@ -118,11 +118,17 @@
                 
 
                 </div>
-            </fieldset>  
-            
+            </fieldset>     
             
         </form>
 
+        <footer>
+            <input 
+            class="button" 
+            type="submit" 
+            form="my-form"
+            value="Salvar evento">
+        </footer>
 
 
     </div>
